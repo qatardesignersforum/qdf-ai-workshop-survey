@@ -1,5 +1,5 @@
 // Paste your deployed Google Apps Script Web App URL here.
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyrf-q2vX72exMwrvUyqFkmdze3QRTovMa7239HnkPDrTAELvANmxsg-CveSn50_KAyAw/exec";
 
 const form = document.getElementById("surveyForm");
 const submitBtn = document.getElementById("submitBtn");

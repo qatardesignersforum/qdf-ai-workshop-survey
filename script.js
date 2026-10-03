@@ -2,7 +2,7 @@
 // Live statistics are read from the public aggregate-only endpoint.
 // Personal information is never requested by the stats endpoint.
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbryf-q2vX72exMwrvUyqFkmdze3QRTovMa7239HnkPDrTAELvANmxsg-CveSn50_KAyAw/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbynDEYY2FGFGhQ_GYOYq3Qolz49a7FSOkNaK4lrlYjm40jrlQ-x1epj5LsF5cQWNqdM3Q/exec";
 
 const form = document.getElementById("surveyForm");
 const submitBtn = document.getElementById("submitBtn");

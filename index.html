@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QDF AI Workshop — Community Survey</title>
+  <meta name="description" content="Qatar Designers Forum AI Workshop Community Survey">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <img class="qdf-logo" src="qdf-logo.png" alt="Qatar Designers Forum - QDF">
+      <h1>AI Workshop<br><span>Community Survey</span></h1>
+      <p class="intro">Help us plan an AI workshop based on what Qatar's designers actually need.</p>
+      <div class="mini-note">Takes about 2 minutes</div>
+    </section>
+
+    <form id="surveyForm" class="card" novalidate>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Your feedback</span><span id="progressText">0 / 7</span></div>
+        <div class="progress"><div id="progressBar"></div></div>
+      </div>
+
+      <div class="question">
+        <label>1. Are you interested in participating in a QDF AI Workshop? <b>*</b></label>
+        <div class="options">
+          <label><input type="radio" name="interest" value="Yes, definitely" required> <span>Yes, definitely</span></label>
+          <label><input type="radio" name="interest" value="Maybe / Need more details"> <span>Maybe / Need more details</span></label>
+          <label><input type="radio" name="interest" value="No"> <span>No</span></label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>2. How are you currently using AI in your design work? <b>*</b></label>
+        <div class="options">
+          <label><input type="radio" name="aiUsage" value="I don't use AI yet" required> <span>I don't use AI yet</span></label>
+          <label><input type="radio" name="aiUsage" value="Occasionally"> <span>Occasionally</span></label>
+          <label><input type="radio" name="aiUsage" value="Sometimes"> <span>Sometimes</span></label>
+          <label><input type="radio" name="aiUsage" value="Regularly"> <span>Regularly</span></label>
+          <label><input type="radio" name="aiUsage" value="AI is an important part of my workflow"> <span>AI is an important part of my workflow</span></label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>3. What AI areas would you like QDF to cover? <b>*</b></label>
+        <p class="hint">Select all that apply.</p>
+        <div class="options">
+          <label><input type="checkbox" name="aiAreas" value="AI for Graphic Design"> <span>AI for Graphic Design</span></label>
+          <label><input type="checkbox" name="aiAreas" value="Adobe Creative Cloud & AI"> <span>Adobe Creative Cloud & AI</span></label>
+          <label><input type="checkbox" name="aiAreas" value="ChatGPT & Claude for Designers"> <span>ChatGPT & Claude for Designers</span></label>
+          <label><input type="checkbox" name="aiAreas" value="AI Image Generation & Editing"> <span>AI Image Generation & Editing</span></label>
+          <label><input type="checkbox" name="aiAreas" value="AI Advertising & Creative Concepts"> <span>AI Advertising & Creative Concepts</span></label>
+          <label><input type="checkbox" name="aiAreas" value="AI Video Generation"> <span>AI Video Generation</span></label>
+          <label><input type="checkbox" name="aiAreas" value="Prompt Writing / Prompt Engineering"> <span>Prompt Writing / Prompt Engineering</span></label>
+          <label><input type="checkbox" name="aiAreas" value="AI Workflow & Productivity"> <span>AI Workflow & Productivity</span></label>
+          <label><input type="checkbox" name="aiAreas" value="Other"> <span>Other</span></label>
+        </div>
+        <input class="other-input" id="aiAreasOther" name="aiAreasOther" type="text" placeholder="If Other, please specify">
+      </div>
+
+      <div class="question">
+        <label for="specificTopic">4. What AI topic or skill do you most want to learn? <b>*</b></label>
+        <textarea id="specificTopic" name="specificTopic" required placeholder="Tell us the specific AI skill, tool, problem or workflow you want the workshop to cover."></textarea>
+      </div>
+
+      <div class="question">
+        <label>5. How would you describe your design experience? <b>*</b></label>
+        <div class="options">
+          <label><input type="radio" name="designExperience" value="Beginner" required> <span>Beginner</span></label>
+          <label><input type="radio" name="designExperience" value="Less than 2 years"> <span>Less than 2 years</span></label>
+          <label><input type="radio" name="designExperience" value="2–5 years"> <span>2–5 years</span></label>
+          <label><input type="radio" name="designExperience" value="5–10 years"> <span>5–10 years</span></label>
+          <label><input type="radio" name="designExperience" value="10+ years"> <span>10+ years</span></label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>6. Where do you currently work? <b>*</b></label>
+        <div class="options">
+          <label><input type="radio" name="workplace" value="Advertising Agency" required> <span>Advertising Agency</span></label>
+          <label><input type="radio" name="workplace" value="Design Studio"> <span>Design Studio</span></label>
+          <label><input type="radio" name="workplace" value="Printing / Production Company"> <span>Printing / Production Company</span></label>
+          <label><input type="radio" name="workplace" value="In-house / Corporate"> <span>In-house / Corporate</span></label>
+          <label><input type="radio" name="workplace" value="Freelance"> <span>Freelance</span></label>
+          <label><input type="radio" name="workplace" value="Self-employed / Own Business"> <span>Self-employed / Own Business</span></label>
+          <label><input type="radio" name="workplace" value="Other"> <span>Other</span></label>
+        </div>
+      </div>
+
+      <div class="question contact">
+        <label>7. Your contact details <b>*</b></label>
+        <div class="fields">
+          <input name="fullName" type="text" required placeholder="Full Name">
+          <input name="company" type="text" required placeholder="Company / Organization">
+          <input name="jobTitle" type="text" required placeholder="Job Title / Design Role">
+          <input name="whatsapp" type="tel" required inputmode="tel" pattern="\+?974[\s-]?\d{4}[\s-]?\d{4}|\d{8}" placeholder="Qatar Contact / WhatsApp (+974)">
+          <input name="email" type="email" required placeholder="Email Address">
+        </div>
+      </div>
+
+      <div class="question">
+        <label for="suggestion">Optional: Any suggestion for the QDF AI Workshop?</label>
+        <textarea id="suggestion" name="suggestion" placeholder="What would make this workshop more useful for you?"></textarea>
+      </div>
+
+      <button type="submit" id="submitBtn">Submit Survey</button>
+      <p id="status" class="status" role="status"></p>
+      <p class="privacy">Your information will be used by QDF for workshop planning and related communication.</p>
+    </form>
+
+    <section id="success" class="success card hidden">
+      <div class="success-icon">✓</div>
+      <p class="eyebrow">THANK YOU</p>
+      <h2>Your feedback has been received.</h2>
+      <p>Your response will help Qatar Designers Forum plan a practical AI workshop for designers.</p>
+      <button type="button" onclick="location.reload()">Submit another response</button>
+    </section>
+
+    <footer>
+      <strong>Qatar Designers Forum – QDF</strong>
+      <span>Where Qatar’s Designers Connect, Create & Grow.</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

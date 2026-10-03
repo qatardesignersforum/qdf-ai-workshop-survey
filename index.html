@@ -16,6 +16,50 @@
       <div class="mini-note">Takes about 2 minutes</div>
     </section>
 
+    <section class="live-stats card" aria-live="polite">
+      <div class="stats-heading">
+        <div>
+          <p class="eyebrow">QDF COMMUNITY PULSE</p>
+          <h2>What designers are saying</h2>
+          <p class="stats-subtitle">Live, anonymous totals from submitted survey responses.</p>
+        </div>
+        <div class="stats-live"><span class="live-dot"></span> Live</div>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <span class="stat-number" id="statTotal">—</span>
+          <span class="stat-label">Responses</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="statInterested">—</span>
+          <span class="stat-label">Interested</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="statAiUsers">—</span>
+          <span class="stat-label">Using AI</span>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stats-panel">
+          <div class="panel-title">Workshop interest</div>
+          <div id="interestChart" class="bar-list">
+            <div class="chart-loading">Loading community data…</div>
+          </div>
+        </div>
+
+        <div class="stats-panel">
+          <div class="panel-title">Most requested AI areas</div>
+          <div id="areasChart" class="bar-list">
+            <div class="chart-loading">Loading community data…</div>
+          </div>
+        </div>
+      </div>
+
+      <p id="statsUpdated" class="stats-updated">Community results update automatically.</p>
+    </section>
+
     <form id="surveyForm" class="card" novalidate>
       <div class="progress-wrap">
         <div class="progress-label"><span>Your feedback</span><span id="progressText">0 / 7</span></div>
@@ -122,6 +166,6 @@
       <span>Where Qatar’s Designers Connect, Create & Grow.</span>
     </footer>
   </main>
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
